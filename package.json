@@ -13,16 +13,14 @@
   },
   "keywords": [],
   "author": {
-    "name": "your name",
-    "email": "your email"
+    "name": "yourName",
+    "email": "yourEmail"
   },
   "license": "MIT",
   "config": {
     "forge": {
       "packagerConfig": {
-        "extraResource": [
-          ""
-        ]
+
       },
       "makers": [
         {
@@ -50,9 +48,9 @@
         [
           "@electron-forge/plugin-webpack",
           {
-            "mainConfig": "./webpack.main.config.js",
+            "mainConfig": "./webpack.configures/webpack.main.config.js",
             "renderer": {
-              "config": "./webpack.renderer.config.js",
+              "config": "./webpack.configures/webpack.renderer.config.js",
               "entryPoints": [
                 {
                   "html": "./src/renderer/index.html",
